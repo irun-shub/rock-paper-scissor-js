@@ -1,9 +1,7 @@
-//anouesement the game begining!
+// game's begining!
 console.log("Let's Play! [Rock Paper and Scissor's]");
 //lets play the game
 game();
-
-
 //creating computerize random answer function for computer to play
 // creat a function name : getComputerChoice()
 // give that function randomly generated number
@@ -27,9 +25,14 @@ function getComputerChoice(randomN) {
 
 // creating a case-insensitive function which i handeled on line #8 by using toLowerCase() method called as playRound
 // this function has 2 parameters named: playerSelection,computerSelection
+//give the value to the functions local variables a = playerSelecton and b = computerSelection
+//if a is paper and b is rock
 //now here we states as "You Lose!" Paper beats Rock"
+//else if a is rock and b is scissors
 // or "You lose! Rock beats Scissors"
+//else if a is scissors and b is paper
 // or "You lose! Scissors beats Paper"
+//else just return its a tie.
 
 function playRound(palyerSelection, computerSelection) {
     let a = palyerSelection, b = computerSelection;
@@ -45,7 +48,7 @@ function playRound(palyerSelection, computerSelection) {
 }
 
 //Now let's write a function called game() 
-// just make sure palyer get the 5 chance to play
+// just to make sure palyer get the 5 chance to play
 // by using playRound function
 //using loop now for that 
 //simply start with a variabel which is start with 0
